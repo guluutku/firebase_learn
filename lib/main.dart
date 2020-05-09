@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfbconn/Pages/Setup/welcome.dart';
-import 'Pages/Setup/signIn.dart';
 
 void main() => runApp(MyApp());
 
