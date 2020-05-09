@@ -64,7 +64,7 @@ class _SignUpPageState extends State<SignUpPage> {
     );
   }
 
-  void signUp() async{
+  void signUp() async {
     if(_formKey.currentState.validate()){
       _formKey.currentState.save();
       try{
