@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Setup/signIn.dart';
+import 'package:flutterfbconn/Pages/Setup/welcome.dart';
+import 'Pages/Setup/signIn.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: LoginPage(title: 'Flutter Demo Home Page'),
+      home: WelcomePage(),
     );
   }
 }
