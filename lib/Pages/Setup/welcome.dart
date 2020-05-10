@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutterfbconn/Pages/Setup/signUp.dart';
+import '../Anonymous/anonymousPage.dart';
 import '../home.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -63,6 +64,13 @@ class _WelcomePageState extends State<WelcomePage> {
           RaisedButton(
             onPressed: signUp,
             child: Text('sign-up'),
+          ),
+
+          RaisedButton(
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AnonymouslyPage()));
+            },
+            child: Text('Continue Anonymously'),
           ),
         ],
       ),
